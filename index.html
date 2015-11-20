@@ -2,12 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Section scroller one-page template</title>
-    <meta name="description" content="This one page example has a fixed navbar and full page height sections. Each section is vertically centered on larger screens, and then stack responsively on smaller screens. Scrollspy is used to activate the current menu item. This layout also has a contact form example. Uses animate.css, FontAwesome, Google Fonts (Lato and Bitter) and Bootstrap." />
+    <title>Artur Herczeg - Senior Software Engineer</title>
+    <meta name="description" content="Artur Herczeg - Senior Software Engineer. An introduction page." />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Codeply">
-
-
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
@@ -86,9 +83,69 @@
                     <div class="col-sm-12 text-center">
                         <div class="panel panel-default slideInUp animate">
                             <div class="panel-heading">
-                                <h3>Methodologies</h3></div>
+                                <h3>Methodologies</h3>
+                            </div>
                             <div class="panel-body">
-                                <p>Agile - Scrum, XP, Kanban</p>
+                                <p>
+                                    <span data-toggle="popover" data-trigger="popover" title="Agile Development" data-html="true" 
+                                        data-content="
+                                            <p>
+                                                <strong>8+ years of experience with local and distributed teams.</strong>
+                                            </p>
+                                            <p>
+                                                Individuals and interactions over processes and tools
+                                                Working software over comprehensive documentation
+                                                Customer collaboration over contract negotiation
+                                                Responding to change over following a plan
+                                            </p>
+                                            ">
+                                        Agile
+                                    </span> 
+                                    - 
+                                    <span data-toggle="popover" data-trigger="popover" title="Scrum" data-html="true" 
+                                        data-content="
+                                            <p>
+                                                <strong>5+ years of experience with distributed teams.</strong>
+                                            </p>
+                                            <p>
+                                                Scrum is an Agile framework for completing complex projects. 
+                                                Scrum originally was formalized for software development projects, but it works well for any complex, innovative scope of work. 
+                                                The possibilities are endless. The Scrum framework is deceptively simple.
+                                            </p>
+                                            ">
+                                        Scrum
+                                    </span>, 
+                                    <span data-toggle="popover" data-trigger="popover" title="Extreme Programming" data-html="true" 
+                                        data-content="
+                                        <p>
+                                            <strong>10+ years of experience with several project types and sizes.</strong>
+                                        </p>
+                                        <p>                                            
+                                            Extreme Programming (XP) is a pragmatic approach to program development that emphasizes business results first and takes 
+                                            an incremental, get-something-started approach to building the product, using continual testing and revision.
+                                        </p>
+                                        ">
+                                        XP,
+                                    </span>
+                                    <span data-toggle="popover" data-trigger="popover" title="Kanban" data-html="true" 
+                                        data-content="
+                                        <p>
+                                            <strong>Partial experience, employed as an additional refinement for Scum and XP</strong>
+                                        </p>
+                                        <p>                                            
+                                            Kanban is a method for managing knowledge work with an emphasis on just-in-time delivery while 
+                                            not overloading the team members. In this approach, the process, from definition of a task to 
+                                            its delivery to the customer, is displayed for participants to see. Team members pull work from a queue.
+                                        </p>
+                                        <p>
+                                            Kanban in the context of software development can mean a visual process-management system that 
+                                            tells what to produce, when to produce it, and how much to produce - inspired by the Toyota Production System
+                                            and by Lean manufacturing.
+                                        </p>
+                                        ">
+                                        Kanban
+                                    </span>
+                                </p>
                                 <p>Test-Driven Development</p>
                                 <p>Continuous Integration</p>
                             </div>
@@ -451,8 +508,13 @@
     <!--scripts loaded here-->
     
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <!--<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>-->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
     
     <script src="js/scripts.js"></script>
+    
+    <script>
+        $('[data-toggle="popover"]').popover({trigger: 'hover','placement': 'top'});
+    </script>
   </body>
 </html>
